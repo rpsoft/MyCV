@@ -16,7 +16,7 @@
 %-------------------------------------------------------------------------------
 %                required packages
 %-------------------------------------------------------------------------------
-
+\usepackage{etoolbox}
 
 %-------------------------------------------------------------------------------
 %                package options
@@ -102,6 +102,9 @@
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \maketitle
 
 \renewcommand*{\makecvfooter}{%
+  \ifnumcomp{\getrefnumber{}} {>} {1}   
+  {} 
+  {	
   \setlength{\footerwidth}{0.8\textwidth}%
   \fancypagestyle{plain}{%
     \fancyfoot[c]{%
@@ -120,7 +123,8 @@
 	{\addtofooter{\homepagesymbol\httplink[\@homepagetitle]{\@homepage}}}}% 
         \ifthenelse{\isundefined{\@extrainfo}}{}{\addtofooter{\@extrainfo}}%
         \ifthenelse{\lengthtest{\footerboxwidth=0pt}}{}{\flushfooter}% the lengthtest is required to avoid flushing an empty footer, which could cause a blank line due to the \\ after the address, if no other personal info is used
-        }}}%
+        }}}
+   }
   \pagestyle{plain}}
 
 
