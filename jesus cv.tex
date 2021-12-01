@@ -29,8 +29,6 @@
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
@@ -39,18 +37,18 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Jesus Alberto} % Your first name
+\firstname{Jesus A.} % Your first name
 \familyname{Rodriguez Perez} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
 %\title{Curriculum Vitae}
-\address{Flat 1/1, 5 Lawrence Street}{Glasgow, Lanarkshire}
+\address{Flat 3/2, 41 Braeside Street}{Glasgow, Lanarkshire}
 \mobile{07516881104}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
 \email{rpsoft@gmail.com}
 \homepage{http://www.dcs.gla.ac.uk/~jesus/}{dcs.gla.ac.uk/~jesus} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{Data Specialist and Information Retrieval PhD Student}
+\extrainfo{Data Specialist and PhD on Information Retrieval}
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
@@ -88,50 +86,38 @@
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-\label{firstPage}
-%\section{PhD Thesis}
-%Specialised on microblog retrieval ad-hoc search and retrieval models.
-\cventry{2011--2017}{PhD in Information Retrieval (Thesis pending)}{}{University of Glasgow}{UK}{}
-\subsection{Thesis Details}
-\cvitem{Title}{\emph{Microblog Retrieval. Challenges and Opportunities}}
-\cvitem{Supervisor}{Professor Joemon M. Jose}
-\cvitem{Description}{Explores the problems faced by the state-of-the-art retrieval models when utilised under microblog ad-hoc retrieval conditions. A number of retrieval techniques were developed to improve ad-hoc retrieval performance of microblogs covering information retrieval areas such as: \textit{retrieval models}, \textit{automatic query expansion}, and \textit{query performance prediction}.}
-\subsection{Publications}
-\cvitem{}{\vspace{-0.5cm}
-\begin{itemize}
-\item Jesus A. Rodriguez Perez, and Joemon M. Jose. ``MBRM: A Microblog Retrieval Model'' TOIS 2018. (Under Review).
-\item Jesus A. Rodriguez Perez, and Joemon M. Jose. ``On Microblog Dimensionality and Informativeness'' Proceedings of ICTIR 2015.
-\item Jesus A. Rodriguez Perez, and Joemon M. Jose. ``Predicting Query Performance in Microblog Retrieval'' Proceedings of the 37th ACM SIGIR conference. 2014.
-\item Jesus A. Rodriguez Perez, et al. ``On using inter-document relations in microblog retrieval.'' Proceedings of the 22nd international conference WWW 2013.
-\end{itemize}
-}
-
-\cventry{2006--2011}{Bsc in Computing Science}{}{University of Glasgow}{UK}{}
-\cvitem{}{Dissertation on collaborative search. Published as \textit{CoFox: a visual collaborative browser} in CIKM2011 (http://www.cikm2011.org/)}
-
-%----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Professional Experience}
+\cventry{2021--present}{Data Science Lecturer}{}{School of Computing Science}{University of Glasgow, UK}{Teaching data science courses and supervising of projects involving NLP, Machine Learning, Information Retrieval and related technologies.
+	\vspace{0.25cm}
+	\begin{itemize}
+		\item \textbf{Text As Data} Course. This course delivers an introduction to leveraging text as a source of data. Students are taught about language models, text classification (machine learning), NLP, embeddings, and modern contextual language models based on transformer architectures.
+		\item \textbf{Introduction to Data Science and Systems} Course. My section deals with database systems. Particularly, how is data physically organised, how data structures facilitate querying, as well as techniques to estimate query execution costs which enable query optimisation.
+	\end{itemize}
+	\vspace{0.25cm}
+}
 
-%\subsection{Professional}
-% data generation ; mining; interpret data; 
-\cventry{2015--Present}{Data Specialist}{}{CREATe - School of Law}{University of Glasgow, UK}{Provide data-driven solutions to copyright research problems, maintain IT infrastructures and design \& develop software. Involved in numerous projects:
+\cventry{2017--2020}{Research Associate}{}{Institute of Health \& Wellbeing}{University of Glasgow, UK}{Assisting on research about diabetes and cardiovascular issues, eligibility criteria to medical trials and streamlining the research processes within the institute.
 \vspace{0.25cm}
 \begin{itemize}
-\item \textbf{How Much Do Consumers Value Interoperability?} Research paper utilising web scrapped data on sales and reviews of DVD players to study the effects of DRM.\\ (https://papers.ssrn.com/sol3/papers.cfm?abstract\_id=2998767)
-\item \textbf{Online Media Behaviour Analytics.} A web tool to allow the interrogation and data extraction from Ofcom/IPO survey datasets on infringement and media consumption behaviour in the UK. (http://www.create.ac.uk/omeba)
-\item \textbf{Intellectual Property - Oral History Project.} A web registry of IP related material. Developed the site from the ground up using NodeJS, React and other state-of-the-art web technologies. (http://iporalhistory.co.uk)
-\item \textbf{Digitising the Edwin Morgan Scrapbooks.} Portal and annotation tool development. (www.digitisingmorgan.org)
-\item \textbf{Litigation Explorer.} Web tool to interrogate a dataset of IP litigation cases from the small claims court in London. (http://copyrightcentral.arts.gla.ac.uk/litexp)
+	\item Developed \textbf{TableTidier}, tool that utilises informed classifiers for the semi-automated extraction of data from PDF tables preserving relationships with headings. \\(Demo: \url{https://vimeo.com/365161796})
+	\item Created \textbf{R for Researchers} an online course for the University of Glasgow, which aims to introduce R tools to streamline research activities within the Health and Wellbeing Institute. Focused on version control and publication libraries. (Course link: \url{https://youtube.com/watch?v=f5W3cNbfT2w})
+\end{itemize}
+\vspace{0.25cm}
+}
+
+\cventry{2015--2017}{Data Specialist}{}{CREATe - School of Law}{University of Glasgow, UK}{Provide data-driven solutions to copyright research problems, maintain IT infrastructures and design \& develop software. Involved in numerous projects:
+\vspace{0.25cm}
+\begin{itemize}
+\item \textbf{Online Media Behaviour Analytics.} A web tool to allow the interrogation and data extraction from Ofcom/IPO survey datasets on infringement and media consumption behaviour in the UK. (\url{http://www.create.ac.uk/omeba})
+\item \textbf{Intellectual Property - Oral History Project.} A web registry of IP related material. Developed the site from the ground up using NodeJS, React and other state-of-the-art web technologies. (\url{http://iporalhistory.co.uk})
+\item \textbf{Digitising the Edwin Morgan Scrapbooks.} Portal and annotation tool development. (\url{www.digitisingmorgan.org})
+\item \textbf{Litigation Explorer.} Web tool to interrogate a dataset of IP litigation cases from the small claims court in London. (\url{http://copyrightcentral.arts.gla.ac.uk/litexp})
 \item \textbf{Creative Output in a Market Context}. Real-time and multi-user evaluation platform to study the effects of creativity in a economics context.
 %\item \textbf{IPWatchr - Demo.} Monitoring of social media profiles sharing infringing content connected with the product's P2P activity. (http://copyrightcentral.arts.gla.ac.uk/ipwatchr)
-\item \textbf{EU Hackathon. } Co-organiser of the challenges for the copyright-related 2016 EU Hackathon. (http://2016.euhackathon.eu/)
+\item \textbf{EU Hackathon. } Co-organiser of the challenges for the copyright-related 2016 EU Hackathon. (\url{http://2016.euhackathon.eu/})
 \end{itemize}
 \vspace{0.25cm}
 }
@@ -148,7 +134,44 @@
 
 \cventry{2009--2015}{Library Demonstrator}{Computing Help Desk}{University of Glasgow}{UK}{Ensured the smooth running of the library computing services and providing students with technical assistance.}
 
-\cventry{2008}{Software Developer}{Psychology Department}{University of Glasgow}{UK}{Software development and data processing assistance on brain imaging data for a MoD-sponsored project supervised by Prof. Frank Pollick}
+\cventry{2008}{Software Developer}{School of Psychology}{University of Glasgow}{UK}{Software development and data processing assistance on brain imaging data for a MoD-sponsored project supervised by Prof. Frank Pollick}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Collaborations}
+\begin{itemize}
+	\item \textbf{Ten Assumptions About Artificial Intelligence That Can Mislead Patent Law Analysis} Research paper examines a set of assumptions about artificial intelligence, often taken as factual premises in discussions regarding ‘artificial ingenuity’ -  2021\\ (\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3910332})
+	\item \textbf{How Much Do Consumers Value Interoperability?} Research paper utilising web scrapped data on sales and reviews of DVD players to study the effects of DRM. - 2017\\ (\url{https://papers.ssrn.com/sol3/papers.cfm?abstract\_id=2998767})
+\end{itemize}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\label{firstPage}
+%\section{PhD Thesis}
+%Specialised on microblog retrieval ad-hoc search and retrieval models.
+\cventry{2011--2017}{PhD in Information Retrieval}{}{University of Glasgow}{UK}{}
+\subsection{Thesis Details}
+\cvitem{Title}{\emph{Microblog Retrieval. Challenges and Opportunities}}
+\cvitem{Supervisor}{Professor Joemon M. Jose}
+\cvitem{Description}{Explores the problems faced by the state-of-the-art retrieval models when utilised under microblog ad-hoc retrieval conditions. A number of retrieval techniques were developed to improve ad-hoc retrieval performance of microblogs covering information retrieval areas such as: \textit{retrieval models}, \textit{automatic query expansion}, and \textit{query performance prediction}.}
+\subsection{Publications}
+\cvitem{}{
+	\begin{itemize}
+		%\item Jesus A. Rodriguez Perez, and Joemon M. Jose. ``MBRM: A Microblog Retrieval Model'' TOIS 2018. (Under Review).
+		\item Jesus A. Rodriguez Perez, and Joemon M. Jose. ``On Microblog Dimensionality and Informativeness'' Proceedings of ICTIR 2015.
+		\item Jesus A. Rodriguez Perez, and Joemon M. Jose. ``Predicting Query Performance in Microblog Retrieval'' Proceedings of the 37th ACM SIGIR conference. 2014.
+		\item Jesus A. Rodriguez Perez, et al. ``On using inter-document relations in microblog retrieval.'' Proceedings of the 22nd international conference WWW 2013.
+	\end{itemize}
+}
+
+\cventry{2006--2011}{Bsc in Computing Science}{}{University of Glasgow}{UK}{}
+\cvitem{}{Dissertation on collaborative search. Published as \textit{CoFox: a visual collaborative browser} in CIKM2011 (http://www.cikm2011.org/)}
+
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
@@ -160,16 +183,16 @@
 
 \cventry{2013}{First and \textit{``people's choice''} prizes at Amazon Hackathon 2013}{}{Edinburgh}{}{Web application to map drug usage across the country from a NHS dataset. (Team of 3)}
 
-\pagebreak
+
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Computer skills}
 \cvitem{Web development}{NodeJS, ReactJS, ExpressJS, MaterialUI, PHP, JQuery, SQL, XQuery, HTML5, CSS}
-\cvitem{Technologies}{Hadoop, Weka (Machine Learning), Lucene, WordNet, Unity }
-\cvitem{Operating Systems}{Advanced user of Debian-based distributions, Advanced Windows User
-}
+\cvitem{Technologies}{Hadoop, Machine Learning(SKlearn \& Weka), Lucene, WordNet, Unity }
+\cvitem{Operating Systems}{Advanced user of Debian-based distributions, Advanced Windows User}
+\cvitem{Games Development}{Unity with C\# (Android)}
 
 
 %----------------------------------------------------------------------------------------
@@ -189,7 +212,7 @@
 
 \cvitem{Spanish}{Mothertongue}{}
 \cvitem{English}{Fluent}{}
-\cvitem{French}{Basic}{}
+\cvitem{French}{Basic Command}{}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
@@ -199,9 +222,10 @@
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
+\cvlistdoubleitem{Composing Music}{Guitar \& Bass}
 \cvlistdoubleitem{Gaming}{Games development}
 \cvlistdoubleitem{Climbing}{Football}
-\cvlistdoubleitem{Martial Arts}{Guitar}
+\cvlistdoubleitem{Martial Arts}{Cooking}
 
 %----------------------------------------------------------------------------------------
 
